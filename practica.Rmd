@@ -1,0 +1,79 @@
+---
+title: "Reporte RMarkdown"
+author: "Maria Lucero Garcia Munguia"
+date: "29/9/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Tema
+
+## Subtema
+
+### Tercer nivel del titulo
+
+#### Cuarto nivel del titulo
+
+
+texto en cursivas *cursivas*
+
+
+texto en negritas **negritas**
+
+
+subindice 3~2~ Ejemplo: H~2~O Glucosa C~12~H~12~O~6~
+
+
+superindice 3^2^
+
+
+texto tachado ~lucero~
+
+
+av. Xalapa #23
+
+
+#tipado matematico
+
+ecuacion en linea $a=b+c$
+
+ecuacion en bloque $$a=b+c$$
+
+insertar hipervinculo [titulo] (direccion web),ejemplo Mi  [github] (https://github.com/LuceGarcia/Ciencia_Datos)
+
+
+
+# bloque de comandos
+el bloque de comandos se llama **chunk** se inserta presionando el boton con el cuadro verde que contiene la letra **c**, localizada en la esquina superior en esta ventana
+
+ejemplo: voy a llamar una matriz de datos que se llama **iris**, que se encuentra precargada en R. 
+```{r}
+data(iris)
+```
+
+## Exploracion de matrices
+```{r}
+colnames(iris)
+```
+##uso del bloque de comandos
+
+mostrar el resultado del código
+```{r echo=FALSE}
+colnames(iris)
+```
+
+mostrar código sin resultado
+```{r results=FALSE}
+colnames(iris)
+
+```
+cargar y abrir paquetes
+```{r warning=FALSE, message=FALSE}
+library(ggplot2)
+```
+
+```
+
