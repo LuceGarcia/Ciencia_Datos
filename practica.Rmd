@@ -13,64 +13,66 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Subtema
 
-### Tercer nivel del titulo
+### Tercer nivel del título
 
-#### Cuarto nivel del titulo
-
-
-texto en cursivas *cursivas*
+#### Cuarto nivel del título
 
 
-texto en negritas **negritas**
+Texto en cursivas *cursivas*
 
 
-subindice 3~2~ Ejemplo: H~2~O Glucosa C~12~H~12~O~6~
+Texto en negritas **negritas**
 
 
-superindice 3^2^
+Subíndice 3~2~ Ejemplo: H~2~O Glucosa C~12~H~12~O~6~
 
 
-texto tachado ~lucero~
+Superindice 3^2^
 
 
-av. Xalapa #23
+Texto tachado ~lucero~
 
 
-#tipado matematico
-
-ecuacion en linea $a=b+c$
-
-ecuacion en bloque $$a=b+c$$
-
-insertar hipervinculo [titulo] (direccion web),ejemplo Mi  [github] (https://github.com/LuceGarcia/Ciencia_Datos)
+Av. Xalapa #23
 
 
+# Tipado matemático
 
-# bloque de comandos
-el bloque de comandos se llama **chunk** se inserta presionando el boton con el cuadro verde que contiene la letra **c**, localizada en la esquina superior en esta ventana
+Ecuación en línea $a=b+c$
 
-ejemplo: voy a llamar una matriz de datos que se llama **iris**, que se encuentra precargada en R. 
+Ecuación en bloque $$a=b+c$$
+
+Insertar hipervínculo [título] (dirección web),ejemplo Mi  [github] (https://github.com/LuceGarcia/Ciencia_Datos)
+
+
+
+# Bloque de comandos
+El bloque de comandos se llama **chunk** se inserta presionando el botón con el cuadro verde que contiene la letra **C**, localizada en la esquina superior en esta ventana.
+
+Ejemplo: voy a llamar una matriz de datos que se llama **iris**, que se encuentra precargada en R. 
 ```{r}
 data(iris)
 ```
 
-## Exploracion de matrices
+## Exploración de matrices
+
+
 ```{r}
 colnames(iris)
 ```
-##uso del bloque de comandos
+## Uso del bloque de comandos
 
-mostrar el resultado del código
+Mostrar el resultado del código.
 ```{r echo=FALSE}
 colnames(iris)
 ```
 
-mostrar código sin resultado
+mostrar código sin resultado.
 ```{r results=FALSE}
 colnames(iris)
 
 ```
-cargar y abrir paquetes
+Cargar y abrir paquetes.
 ```{r warning=FALSE, message=FALSE}
 library(ggplot2)
 ```
